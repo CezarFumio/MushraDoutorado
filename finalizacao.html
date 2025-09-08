@@ -212,7 +212,7 @@
             const evaluations = getEvaluations().filter(e => e.score !== "N/A");
     
             if (name && age && evaluations.length === audioIds.length) {
-                addDoc(collection(db, "MUSHRA2test"), {
+                addDoc(collection(db, "MUSHRA2final"), {
                     name: name,
                     age: age,
                     evaluations: evaluations,
@@ -234,3 +234,4 @@
 </body>
 
 </html>
+
